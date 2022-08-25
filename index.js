@@ -1,12 +1,28 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  //write a function whereby a word can be read the same from backword and forward.For example "mom","dad".
+ // if it can be read in the same way to return true else false. 
+
+ for (let a=0; a< word.length; a++){//Iterate through the letters of the word from start
+  let b= word.length-1 -a;//itereate from backward
+  
+  
+  if(word[a]===word[b]){return true;//check whether it fulfills the condition and return true
+ }
+ return false;
+}
 }
 
 /* 
-  Add your pseudocode here
+  
 */
 
 /*
+mom==mom //This should return true.
+a  ==  b
+
+boy===boy//this should return false
+a  ==== b
   Add written explanation of your solution here
 */
 
